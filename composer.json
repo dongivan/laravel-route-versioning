@@ -1,13 +1,16 @@
 {
     "name": "dongivan/laravel-route-versioning",
+    "version": "1.0",
     "description": "A simple package to support route versioning in laravel.",
     "type": "library",
     "require": {
+        "php": "^8.0.2",
         "illuminate/routing": "^9.39",
         "symfony/expression-language": "^6.1"
     },
     "require-dev": {
-        "laravel/laravel": "^9.3"
+        "laravel/framework": "^9.19",
+        "phpunit/phpunit": "^9.5.10"
     },
     "license": "MIT",
     "autoload": {
@@ -15,10 +18,18 @@
             "Dongivan\\RouteVersioning\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
     "authors": [
         {
             "name": "Yifan Dong",
             "email": "6535256+dongivan@users.noreply.github.com"
         }
-    ]
+    ],
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
 }
