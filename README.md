@@ -4,7 +4,7 @@
 
 这个包提供了Laravel下的根据Http请求头进行版本化路由功能。
 
-## Features
+## 功能
 
 - 可以指定请求头中的Version键（默认为`x-version`）。
 - 支持数字版本或者数字化的SemVer版本（不支持含字母的SemVer版本如"2.0.0-rc1"）。
